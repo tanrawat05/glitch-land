@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glitch Land</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="fonts/NTBrickSans/stylesheet.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Roboto+Mono:wght@300;400;500&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="bg">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+  </div>
+
+  <!-- Circular visibility mask -->
+  <div id="matrixMask"></div>
+
+  <!-- Matrix layer -->
+  <canvas id="matrixGrid"></canvas>
+
+  <!-- Glitch Land Content -->
+  <div id="stage">
+    <div class="container">
+
+      <div class="title">
+        <h1 class="glitch" data-text="Glitch">Glitch</h1>
+        <h1 class="glitch" data-text="Land">Land</h1>
+      </div>
+
+      <p class="subtext">Loading the future...</p>
+
+      <div class="loading">
+        <div class="loading-label">0%</div>
+
+        <div class="loading-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- floating images -->
+    <img src="assets/headphone.png" class="floating-img headphones">
+    <img src="assets/cellphone.png" class="floating-img phone">
+    <img src="assets/cd.png" class="floating-img cd">
+    <img src="assets/vhs tape.png" class="floating-img vhs">
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
